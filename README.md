@@ -1,29 +1,68 @@
-# snek_tut1 [wip]
-# [Project init 10.15.20]
-building a quick implementation of snekGeimu relying on various sources for carry[bcos im a noob :(]
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Set-Up/Installation: 
-Clone onto local end
-CLI command 'yarn install'
-CLI command 'yarn start'
+## Available Scripts
 
-Working Notes Below
+In the project directory, you can run:
 
-Implementation Plan: 
+### `yarn start`
 
-Goals for myself: 
-1 - get over needing to execute perfectly, practice a reliance on resources so I can work fast when needed
-2 - get another rep of practice working with 
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Init: 
-I'll be using create-react-app's init to set-up the project first as this is a method I am used to. I'll want to create my own board since I already know how to do this. Afterwards I'll look at a few implementations and pick one that seems feasible for me. 
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Set-Up: 
-Basic set-up will involve a button to start the game and a board within which the edibles & snek are contained 
-I'll build a grid representation of the board in the client app's state memory. Initially I will implement this simply by drilling props to pass around state info, without care for lifted state's unnecessary re-renders. I figured out how to deal with this problem in a previous project but it felt like an overcomplicated solution and I'm still feeling murky about how to re-implement that. Thus another main goal for me in this project is to get another rep in working with large numbers of components and needing to control their re-rendering with precise state management. 
+### `yarn test`
 
-Game State: 
-While attempting this portion in my previous snekGame, I noticed there's a lot of in-between states to the game actually starting. For instance, game could start and then the player can place a snek. Snek could be placed, but direction hasn't been picked. Etc. I want a much simpler implementation. I think I'll even pick the direction for the player just to 'package' the game in progress state all as one thing rather than several
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Mechanics: 
-TBD[At this point I will research through tutorials for a quick implement]
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
