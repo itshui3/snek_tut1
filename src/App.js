@@ -42,8 +42,18 @@ function App() {
 
     // [consume apple]
     const checkConsume = () => {
-        
+
     }
+
+    // ??
+    const gameLoop = () => {
+
+    }
+
+    // trigger when we update snake, apple, or set game over
+    useEffect(() => {
+
+    }, [snake, apple, gameOver])
 
     return (
         <div className="App">
