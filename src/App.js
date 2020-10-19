@@ -55,8 +55,23 @@ function App() {
 
     }, [snake, apple, gameOver])
 
+    // giving a div the role of 'button' seems to have to do with registering arrow keys
+
     return (
-        <div className="App">
+        <div 
+        role="button" 
+        className="App"
+        tabIndex="0"
+        onKeyDown={e => moveSnek(e)}
+        >
+            <canvas
+            style={{ border: "1px solid black" }}
+            ref={canvasRef}
+            width={`${CANVAS_SIZE[0]}px`}
+            height={`${CANVAS_SIZE[1]}px`}
+            />
+            {gameOver && <div>GAME OVER!</div>}
+            <button onClick={startGame}>Start Game</button>
 
         </div>
     );
