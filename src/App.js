@@ -67,9 +67,11 @@ function App() {
             <canvas
             style={{ border: "1px solid black" }}
             ref={canvasRef}
-            >
-
-            </canvas>
+            width={`${CANVAS_SIZE[0]}px`}
+            height={`${CANVAS_SIZE[1]}px`}
+            />
+            {gameOver && <div>GAME OVER!</div>}
+            <button onClick={startGame}>Start Game</button>
 
         </div>
     );
